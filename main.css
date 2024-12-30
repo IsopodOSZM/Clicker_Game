@@ -28,11 +28,15 @@ body *{
     position: relative;
     top: -1rem;
 }
-#pps{
+#pps, #ppc{
     width: 15rem;
     height: 3rem;
     border-radius: 20%/100%;
     background-color: royalblue;
+}
+#ppc{
+    position: relative;
+    top: 2rem;
 }
 #currencies{
     width: 100%;
@@ -49,6 +53,7 @@ body *{
     background-color: wheat;
     justify-content: space-evenly;
     flex-flow: row wrap;
+    align-content: space-evenly;
     height: 55rem;
 }
 .upgrade, .upgrade_desc{
@@ -64,20 +69,24 @@ body *{
     opacity: 0;
     background-color: darkgray;
     position: absolute;
+    align-content: flex-start;
 }
 
 .upgrade_desc_text{
     margin: .3rem;
     justify-content: flex-start;
     align-items: flex-start;
+    align-content: flex-start;
 }
-
+.upgraded {
+    display: none;
+}
 @keyframes Upgrade_Desc {
     from {
         opacity: 0;
     }
     to{
-        opacity: .75;
+        opacity: .95;
     }
 }
 .upgrade_desc:hover{
